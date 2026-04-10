@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <!-- Body -->
+  <ellipse cx="100" cy="155" rx="55" ry="50" fill="#F4A460"/>
+  <!-- Head -->
+  <circle cx="100" cy="90" r="48" fill="#F4A460"/>
+  <!-- Left ear -->
+  <polygon points="55,55 45,15 80,45" fill="#F4A460"/>
+  <polygon points="58,52 50,25 75,46" fill="#FFB6C1"/>
+  <!-- Right ear -->
+  <polygon points="145,55 155,15 120,45" fill="#F4A460"/>
+  <polygon points="142,52 150,25 125,46" fill="#FFB6C1"/>
+  <!-- Face - left eye -->
+  <ellipse cx="82" cy="85" rx="10" ry="12" fill="#2C2C2C"/>
+  <circle cx="85" cy="82" r="3" fill="white"/>
+  <!-- Face - right eye -->
+  <ellipse cx="118" cy="85" rx="10" ry="12" fill="#2C2C2C"/>
+  <circle cx="121" cy="82" r="3" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="100" cy="100" rx="5" ry="3.5" fill="#FF9999"/>
+  <!-- Mouth -->
+  <path d="M95 103 Q100 109 105 103" stroke="#2C2C2C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Whiskers left -->
+  <line x1="55" y1="98" x2="90" y2="102" stroke="#888" stroke-width="1.2"/>
+  <line x1="55" y1="104" x2="90" y2="104" stroke="#888" stroke-width="1.2"/>
+  <line x1="55" y1="110" x2="90" y2="106" stroke="#888" stroke-width="1.2"/>
+  <!-- Whiskers right -->
+  <line x1="145" y1="98" x2="110" y2="102" stroke="#888" stroke-width="1.2"/>
+  <line x1="145" y1="104" x2="110" y2="104" stroke="#888" stroke-width="1.2"/>
+  <line x1="145" y1="110" x2="110" y2="106" stroke="#888" stroke-width="1.2"/>
+  <!-- Left arm -->
+  <ellipse cx="52" cy="155" rx="14" ry="28" fill="#F4A460" transform="rotate(-20 52 155)"/>
+  <!-- Right arm -->
+  <ellipse cx="148" cy="155" rx="14" ry="28" fill="#F4A460" transform="rotate(20 148 155)"/>
+  <!-- Left leg -->
+  <ellipse cx="78" cy="198" rx="16" ry="22" fill="#F4A460"/>
+  <!-- Right leg -->
+  <ellipse cx="122" cy="198" rx="16" ry="22" fill="#F4A460"/>
+  <!-- Belly -->
+  <ellipse cx="100" cy="158" rx="30" ry="28" fill="#FFDAB9"/>
+  <!-- Tail -->
+  <path d="M150 175 Q190 150 175 120 Q160 95 175 85" stroke="#F4A460" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Blush left -->
+  <ellipse cx="72" cy="108" rx="10" ry="6" fill="#FFB6C1" opacity="0.6"/>
+  <!-- Blush right -->
+  <ellipse cx="128" cy="108" rx="10" ry="6" fill="#FFB6C1" opacity="0.6"/>
+</svg>

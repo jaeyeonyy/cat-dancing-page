@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ffecd2 100%);
+  background-size: 400% 400%;
+  animation: bg-shift 8s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== 앱 레이아웃 ===== */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 24px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ===== 헤더 ===== */
+.app-header {
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 800;
+  color: #5a2d82;
+  text-shadow: 0 2px 8px rgba(90, 45, 130, 0.15);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.app-header p {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  color: #a37bc0;
+  font-weight: 500;
+}
+
+/* ===== 메인 카드 ===== */
+.app-main {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 28px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  box-shadow: 0 8px 40px rgba(160, 100, 200, 0.15),
+              0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* ===== 푸터 ===== */
+.app-footer {
+  text-align: center;
+  color: #c08ade;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ===== 반응형: 모바일 ===== */
+@media (max-width: 480px) {
+  .app {
+    padding: 24px 16px;
+    gap: 20px;
+  }
+
+  .app-main {
+    padding: 28px 20px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+
+  .cat-image {
+    width: 130px !important;
+  }
+
+  .toggle-btn {
+    padding: 12px 32px;
+    font-size: 1.05rem;
+  }
+
+  .speed-btn {
+    padding: 7px 14px;
+    font-size: 0.82rem;
+  }
+}
+
+/* ===== 반응형: 태블릿 ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .app-main {
+    padding: 36px 28px;
+  }
+
+  .cat-image {
+    width: 155px !important;
+  }
+}
+
+/* ===== 접근성: 키보드 포커스 ===== */
+button:focus-visible {
+  outline: 3px solid #a855f7;
+  outline-offset: 3px;
+}
+
+/* ===== 접근성: 모션 감소 선호 ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
